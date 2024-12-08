@@ -83,6 +83,7 @@ const CustomizeProducts = ({
                     cursor: disabled ? 'not-allowed' : 'pointer'
                   }}
                   onClick={clickHandler}
+                  key={choice.description}
                 >
                   {selected && (
                     <div className='absolute w-10 h-10 rounded-full ring-2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ' />
@@ -104,6 +105,7 @@ const CustomizeProducts = ({
                     color: selected || disabled ? 'white' : '#f35c7a',
                     boxShadow: disabled ? 'none' : ''
                   }}
+                  key={choice.description}
                   onClick={clickHandler}
                 >
                   {choice.description}
